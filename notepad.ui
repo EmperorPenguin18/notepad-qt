@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionSet_font"/>
+    <addaction name="actionBold"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionItalic"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-new-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-new-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-open-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-open-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-save-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-save-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-save-as-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-save-as-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-print-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/document-print-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/application-exit-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/application-exit-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSet_font">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/font-select-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/font-select-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Set font</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-copy-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-copy-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-cut-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-cut-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-paste-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-paste-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-undo-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-undo-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-redo-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/edit-redo-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-bold-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-bold-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-underline-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-underline-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-italic-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/actions/format-text-italic-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../usr/share/icons/Adwaita/32x32/apps/preferences-system-details-symbolic.symbolic.png</normaloff>../../../usr/share/icons/Adwaita/32x32/apps/preferences-system-details-symbolic.symbolic.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
